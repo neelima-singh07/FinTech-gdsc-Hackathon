@@ -10,9 +10,13 @@ function DashboardPage() {
       <div className="text-center text-4xl font-bold mb-6">Your Expense Tracker</div>
 
       {/* 🍩 Keep Pie Chart Here */}
-      <div className="flex justify-center">
-        <ApexChart />
-      </div>
+      <div className="bg-white shadow-xl rounded-2xl p-6 border-l-4 border-yellow-400">
+  <h3 className="text-xl font-semibold text-yellow-700 mb-4">🍩 Expense Breakdown</h3>
+  <div className="flex justify-center">
+    <ApexChart />
+  </div>
+</div>
+
 
       <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
         <div className="bg-white shadow-xl rounded-2xl p-6 border-l-4 border-blue-400">
