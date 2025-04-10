@@ -14,7 +14,7 @@ const ApexChart = () => {
         breakpoint: 480,
         options: {
           chart: {
-            width: 200
+            width: 800
           },
           legend: {
             position: 'bottom'
@@ -30,7 +30,7 @@ const ApexChart = () => {
         options={state.options} 
         series={state.series} 
         type="donut" 
-        height={350}
+        height={500}
       />
     </div>
     
