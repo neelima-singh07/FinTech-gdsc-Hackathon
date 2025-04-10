@@ -32,6 +32,12 @@
   width:1000px;
   border:2px solid black;
 }
+.navbar navbar-expand-lg navbar-light{
+  color:black;
+}
+.navbar-brand{
+  color:lightsalmon;
+}
 
 
 
