@@ -7,7 +7,7 @@ function App() {
     <div className="App">
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light bg-light" style={{ backgroundColor: 'blue' }}>
-        <a className="navbar-brand" href="#">FinTech</a>
+        <a className="navbar-brand" href="#">FinBuddy</a>
         <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -15,25 +15,16 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="#">Home <span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="expanse_tracker.js">Daily Expense Tracker <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Link</a>
+              <a className="nav-link" href="#">Stock Insights</a>
             </li>
-            <li className="nav-item dropdown">
-              <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Dropdown
-              </a>
-              <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                <a className="dropdown-item" href="#">Action</a>
-                <a className="dropdown-item" href="#">Another action</a>
-                <div className="dropdown-divider"></div>
-                <a className="dropdown-item" href="#">Something else here</a>
-              </div>
-            </li>
+            {/* / */}
             <li className="nav-item">
-              <a className="nav-link disabled" href="#">Disabled</a>
+              <a className="nav-link" href="#">Chatbot</a>
             </li>
+            
           </ul>
           <form className="form-inline my-2 my-lg-0">
             <input className="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search"/>
@@ -43,8 +34,8 @@ function App() {
       </nav>
 
       {/* Main Content */}
-      <div className="container mt-4">
-        <h2>Expanse Tracker</h2>
+      <div className="Tracker_parent">
+        <h2 id="your">Your Expense Tracker</h2>
         <div className="chart-container">
           <ApexChart />
         </div>

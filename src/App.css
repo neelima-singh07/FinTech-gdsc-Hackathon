@@ -27,6 +27,21 @@
 .App-link {
   color: #61dafb;
 }
+.your{
+  font-size: 24px;
+  font-weight: 600;
+  color: #c92291;
+}
+#Tracker_parent{
+  height:300px;
+  width:300px;
+  display:flex;
+  border:2px solid black;
+  align-items: center;
+  justify-content: center;
+
+ 
+}
 
 @keyframes App-logo-spin {
   from {

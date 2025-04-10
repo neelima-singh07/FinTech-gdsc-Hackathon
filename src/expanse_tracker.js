@@ -33,7 +33,9 @@ const ApexChart = () => {
         height={350}
       />
     </div>
+    
   );
+  
 };
 
 export default ApexChart; // Must be default export
