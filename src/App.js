@@ -1,10 +1,11 @@
-import logo from './logo.svg';
 import './App.css';
-import ApexChart from './expanse_tracker'; // Make sure the path is correct
+import DashboardPage from './DashboardPage';
+import ApexChart from './expanse_tracker';
 
 function App() {
   return (
     <div className="App">
+
       {/* Navbar */}
       <nav className="navbar navbar-expand-lg navbar-light" >
         <a className="navbar-brand" href="#">FinBuddy</a>
@@ -31,7 +32,7 @@ function App() {
             <button className="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
           </form>
         </div>
-      </nav>
+      
 
       {/* Main Content */}
       <div className="Tracker_parent">
@@ -40,7 +41,8 @@ function App() {
           <ApexChart />
         </div>
       </div>
-    </div>
+    </nav>
+  </div>
   );
 }
 
