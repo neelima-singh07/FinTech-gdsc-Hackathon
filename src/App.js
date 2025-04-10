@@ -1,6 +1,7 @@
 import './App.css';
-import DashboardPage from './DashboardPage';
+import WeeklySummary from './DashboardPage';
 import ApexChart from './expanse_tracker';
+import DashboardPage from '.DashboardPage'
 
 function App() {
   return (
@@ -34,14 +35,29 @@ function App() {
         </div>
       
 
-      {/* Main Content */}
-      <div className="Tracker_parent">
+      
+    </nav>
+    {/* Main Content */}
+    <div className="Tracker_parent">
         <h2 id="your">Your Expense Tracker</h2>
         <div className="chart-container">
           <ApexChart />
         </div>
       </div>
-    </nav>
+
+      <div className="Weekly=summary">
+        <h2 id="your">Weekly summary</h2>
+        <div className="summary">
+          <WeeklySummary />
+        </div>
+      </div>
+
+      <div className="Dashboard_page">
+        <h2 id="your">Dashboard Page</h2>
+        <div className="dashboard">
+          < DashboardPage/>
+        </div>
+      </div>
   </div>
   );
 }
