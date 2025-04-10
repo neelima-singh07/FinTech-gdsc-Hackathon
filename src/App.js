@@ -1,7 +1,7 @@
 import './App.css';
 import WeeklySummary from './DashboardPage';
 import ApexChart from './expanse_tracker';
-import DashboardPage from '.DashboardPage'
+//import DashboardPage from '.DashboardPage'
 
 function App() {
   return (
@@ -17,14 +17,14 @@ function App() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul className="navbar-nav mr-auto">
             <li className="nav-item active">
-              <a className="nav-link" href="expanse_tracker.js">Daily Expense Tracker <span className="sr-only">(current)</span></a>
+              <a className="nav-link" href="expanse_tracker.js">WeeklySummary <span className="sr-only">(current)</span></a>
             </li>
             <li className="nav-item">
-              <a className="nav-link" href="#">Stock Insights</a>
+              <a className="nav-link" href="#">Recent Transactions</a>
             </li>
             {/* / */}
             <li className="nav-item">
-              <a className="nav-link" href="#">Chatbot</a>
+              <a className="nav-link" href="#">AI-Chatbot</a>
             </li>
             
           </ul>
@@ -52,12 +52,12 @@ function App() {
         </div>
       </div>
 
-      <div className="Dashboard_page">
+      {/* <div className="Dashboard_page">
         <h2 id="your">Dashboard Page</h2>
         <div className="dashboard">
           < DashboardPage/>
         </div>
-      </div>
+      </div> */}
   </div>
   );
 }
