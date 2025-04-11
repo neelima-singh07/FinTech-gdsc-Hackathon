@@ -79,7 +79,11 @@ function App() {
         </Routes>
 
       </div>
+      <footer className="footer text-center p-3 mt-5 bg-dark text-light">
+        &copy; {new Date().getFullYear()} FinBuddy. All rights reserved.
+      </footer>
     </Router>
+    
   );
 }
 
