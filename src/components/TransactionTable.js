@@ -12,7 +12,7 @@ const transactions = [
 const TransactionTable = () => {
   return (
     <div className="overflow-x-auto">
-      <table className="min-w-full text-sm text-left border-collapse">
+      <table className="min-w-full text-sm text-center border-collapse">
         <thead>
           <tr className="bg-gray-100 text-gray-700">
             <th className="py-2 px-4 border-b">Date</th>
