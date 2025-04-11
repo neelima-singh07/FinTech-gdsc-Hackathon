@@ -6,6 +6,7 @@ import WeeklySummary from './components/WeeklySummary';
 import ApexChart from './expanse_tracker';
 import DashboardPage from './DashboardPage';
 import AITips from './components/AITips';
+import HeroSection from './hero_section';
 
 function App() {
   return (
@@ -37,7 +38,10 @@ function App() {
             </ul>
           </div>
         </nav>
-
+        { <div className="hero">
+              <h2></h2>
+              <HeroSection />
+            </div> }
         {/* ROUTED PAGES */}
         <Routes>
           <Route path="/" element={
@@ -77,6 +81,10 @@ function App() {
             </div>
           } />
         </Routes>
+        
+            
+
+
 
       </div>
       <footer className="footer text-center p-3 mt-5 bg-dark text-light">
