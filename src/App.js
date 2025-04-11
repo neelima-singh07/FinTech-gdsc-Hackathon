@@ -38,10 +38,10 @@ function App() {
             </ul>
           </div>
         </nav>
-        { <div className="hero">
+        {/* { <div className="hero">
               <h2></h2>
               <HeroSection />
-            </div> }
+            </div> } */}
         {/* ROUTED PAGES */}
         <Routes>
           <Route path="/" element={
