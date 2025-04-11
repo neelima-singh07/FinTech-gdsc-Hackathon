@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -31,13 +32,23 @@
   height: 600px;
   width:1000px;
   border:2px solid black;
+  border-radius: 4rem;
+  margin-top:100px;
+  margin-left:300px;
+  background-color:ivory;
+  
+  /* display:flex; */
+  /* justify-content: space-evenly; */
+
 }
-.navbar navbar-expand-lg navbar-light{
-  color:black;
-}
+/* .navbar navbar-expand-lg{
+  display: flex;
+  
+} */
 .navbar-brand{
   color:lightsalmon;
 }
+
 
 
 
