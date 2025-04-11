@@ -10,8 +10,9 @@ const transactions = [
 
 const TransactionTable = () => {
   return (
-    <div className="flex justify-center"> {/* Horizontally center the table */}
-      <div className="overflow-x-auto w-full max-w-2xl">
+    <div className="w-full flex justify-center"> {/* Full width + center */}
+      <div className="overflow-x-auto w-full max-w-4xl px-4">
+        <h2 className="text-2xl font-bold text-center text-indigo-900 mb-4">Transaction History</h2>
         <table className="min-w-full text-sm text-left border-collapse">
           <thead>
             <tr className="bg-gray-100 text-gray-700">
