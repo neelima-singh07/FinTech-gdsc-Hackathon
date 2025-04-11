@@ -1,5 +1,6 @@
 import './App.css';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route, Link, Navigate } from 'react-router-dom';
+import React from 'react';
 
 import TransactionTable from './components/TransactionTable';
 import WeeklySummary from './components/WeeklySummary';
@@ -9,6 +10,12 @@ import AITips from './components/AITips';
 import './index.css';
 
 import HeroSection from './hero_section';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import Expenses from './pages/Expenses';
+import Profile from './pages/Profile';
+import Navbar from './components/Navbar';
+import BudgetPage from './BudgetPage';
 
 function App() {
   return (
@@ -16,30 +23,7 @@ function App() {
       <div className="App">
 
         {/* Navbar */}
-        <nav className="navbar navbar-expand-lg" style={{ backgroundColor: "black" }}>
-          <Link className="navbar-brand" to="/" style={{ fontSize: "17px", color: "white", textDecoration: "none" }}>FinBuddy</Link>
-          <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <Link className="navbar-exp nav-link" to="/" style={{ color: "white" }}>Expense Tracker</Link>
-
-          <div className="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul className="navbar-nav mr-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/weekly-summary">Weekly Summary</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/transactions">Recent Transactions</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/dashboard">Dashboard</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/ai-tips">AI-Chatbot</Link>
-              </li>
-            </ul>
-          </div>
-        </nav>
+        <Navbar/>
         {/* { <div className="hero">
               <h2></h2>
               <HeroSection />
@@ -82,6 +66,13 @@ function App() {
               <AITips />
             </div>
           } />
+
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+          <Route path="/expenses" element={<Expenses />} />
+          <Route path="/profile" element={<Profile />} />
+          <Route path="/budget" element={<BudgetPage />} />
+          <Route path="/" element={<Navigate to="/dashboard" replace />} />
         </Routes>
         
             

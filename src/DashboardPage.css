@@ -1,0 +1,381 @@
+.dashboard-container {
+  padding: 0;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.dashboard-header {
+  margin: 1.5rem 1rem;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  background-color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.header-content {
+  flex: 1;
+  text-align: left;
+}
+
+.nav-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+}
+
+.nav-button {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  background-color: #f8f9fa;
+  border: none;
+  cursor: pointer;
+  font-size: 0.875rem;
+  color: #1a1a1a;
+  transition: background-color 0.2s ease;
+}
+
+.nav-button:hover {
+  background-color: #e9f5ff;
+  color: #007bff;
+}
+
+.nav-icon {
+  font-size: 1rem;
+}
+
+.profile-icon {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  flex-shrink: 0;
+  margin-left: 0.5rem;
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dashboard-header h1 {
+  font-size: clamp(1.5rem, 4vw, 2.5rem);
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.dashboard-header p {
+  color: #666;
+  font-size: clamp(0.875rem, 2vw, 1rem);
+}
+
+.dashboard-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+.dashboard-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1.25rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+  width: 100%;
+  overflow: hidden;
+}
+
+.dashboard-card:hover {
+  transform: translateY(-2px);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.25rem;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.card-header h2 {
+  font-size: clamp(1rem, 3vw, 1.25rem);
+  color: #1a1a1a;
+  margin: 0;
+}
+
+.card-header .icon {
+  color: #666;
+  font-size: 1.25rem;
+  flex-shrink: 0;
+}
+
+.chart-container {
+  height: clamp(250px, 50vh, 400px);
+  width: 100%;
+  margin: 0 auto;
+  position: relative;
+  overflow: visible;
+  padding: 1rem;
+}
+
+.transactions-table-wrapper {
+  width: 100%;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  margin-bottom: 1rem;
+  position: relative;
+}
+
+.transactions-table {
+  min-width: 100%;
+  width: auto;
+  border-collapse: collapse;
+  font-size: clamp(0.75rem, 2vw, 0.875rem);
+}
+
+.transactions-table th,
+.transactions-table td {
+  padding: 0.75rem;
+  text-align: left;
+  border-bottom: 1px solid #eee;
+  min-width: 120px;
+}
+
+.transactions-table th:first-child,
+.transactions-table td:first-child {
+  position: sticky;
+  left: 0;
+  background: white;
+  z-index: 1;
+}
+
+.transactions-table th {
+  font-weight: 600;
+  color: #666;
+  background: #f8f9fa;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.transactions-table th:first-child {
+  z-index: 3;
+}
+
+.transaction-category {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.category-food { background: #FFE8E8; color: #FF4444; }
+.category-transport { background: #E8F5FF; color: #4488FF; }
+.category-shopping { background: #FFF3E8; color: #FF8844; }
+.category-bills { background: #E8FFE8; color: #44FF44; }
+.category-income { background: #E8FFE8; color: #28a745; }
+
+.ai-tips-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.ai-tip-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 1rem;
+  border-left: 4px solid #007bff;
+}
+
+.ai-tip-card h3 {
+  font-size: clamp(0.875rem, 2vw, 1rem);
+  margin: 0 0 0.5rem 0;
+  color: #1a1a1a;
+}
+
+.ai-tip-card p {
+  font-size: clamp(0.75rem, 1.5vw, 0.875rem);
+  color: #666;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Tablet Breakpoint */
+@media (min-width: 768px) {
+  .dashboard-container {
+    padding: 0;
+  }
+  
+  .dashboard-header {
+    margin: 2rem 1.5rem;
+    padding: 1.5rem;
+  }
+  
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+  
+  .dashboard-card.transactions {
+    grid-column: 1 / -1;
+  }
+  
+  .ai-tips-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .chart-container {
+    min-height: 300px;
+    padding: 1.5rem;
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1.25rem;
+    font-size: 1rem;
+  }
+  
+  .nav-icon {
+    font-size: 1.125rem;
+  }
+  
+  .profile-icon {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+/* Desktop Breakpoint */
+@media (min-width: 1024px) {
+  .dashboard-container {
+    padding: 0;
+  }
+  
+  .dashboard-header {
+    margin: 2.5rem 2rem;
+    padding: 2rem;
+  }
+  
+  .chart-container {
+    min-height: 350px;
+    padding: 2rem;
+  }
+  
+  .ai-tips-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .nav-button {
+    padding: 0.5rem 1.5rem;
+  }
+  
+  .profile-icon {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* Large Desktop Breakpoint */
+@media (min-width: 1280px) {
+  .dashboard-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .dashboard-card.full-width {
+    grid-column: 1 / -1;
+  }
+
+  .chart-container {
+    min-height: 400px;
+  }
+}
+
+/* Mobile Navigation */
+@media (max-width: 767px) {
+  .nav-links {
+    display: none;
+  }
+  
+  .nav-logo {
+    flex: 1;
+  }
+  
+  .nav-buttons {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 1rem;
+  }
+  
+  .nav-button span {
+    display: none;
+  }
+  
+  .nav-button {
+    padding: 0.5rem;
+  }
+  
+  .nav-icon {
+    font-size: 1.25rem;
+  }
+  
+  .profile-icon {
+    margin-left: auto;
+  }
+}
+
+.dashboard-nav {
+  background-color: #ffffff;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.nav-links {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+}
+
+.nav-link {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.75rem 1.25rem;
+  color: #666;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.nav-link:hover {
+  background-color: #f8f9fa;
+  color: #007bff;
+}
+
+.nav-link.active {
+  background-color: #007bff;
+  color: white;
+}
+
+.nav-link svg {
+  font-size: 1.1rem;
+} 
