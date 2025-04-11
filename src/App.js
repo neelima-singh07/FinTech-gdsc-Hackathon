@@ -6,6 +6,8 @@ import WeeklySummary from './components/WeeklySummary';
 import ApexChart from './expanse_tracker';
 import DashboardPage from './DashboardPage';
 import AITips from './components/AITips';
+import './index.css';
+
 import HeroSection from './hero_section';
 
 function App() {

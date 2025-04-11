@@ -14,7 +14,7 @@ const data = [
 
 const WeeklySummary = () => {
   return (
-    <ResponsiveContainer width="100%" height={200}>
+    <ResponsiveContainer width="100%" height={500}>
       <BarChart data={data}>
         <XAxis dataKey="day" />
         <YAxis />
