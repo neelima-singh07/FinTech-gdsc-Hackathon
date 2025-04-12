@@ -53,7 +53,7 @@ FinTech-gdsc-Hackathon/
 ├── package-lock.json      # Exact versions of installed dependencies
 └── README.md              # Project documentation
 
-
+---
 
 🧠 **What's Unique?**
 - 🔍 **Intuitive Dashboard** – Clean, user-friendly interface for effortless financial tracking.
@@ -64,6 +64,7 @@ FinTech-gdsc-Hackathon/
 - ⚡ **Fast & Responsive** – Built with React and Tailwind CSS for a lightning-fast user experience.
 - 🌐 **Seamless Deployment** – Deployed via GitHub Pages with continuous integration using GitHub Actions.
 - 🧠 **Scalable Structure** – Modular design allows easy integration of future features like AI chatbots.
+---
 
 💡 **Future Enhancements:**
 
