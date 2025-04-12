@@ -1,6 +1,6 @@
 # 💰 FinBuddy – Your Friendly FinTech Companion
 
-Welcome to **FinBuddy**, a FinTech web application developed as part of the GDSC Hackathon. FinBuddy is designed to empower users with smarter financial planning, investment tracking, and personalized insights – all through a modern, user-friendly interface.
+FinBuddy is a modern FinTech web application developed during a Google Developer Student Clubs (GDSC) Hackathon. It aims to empower users with smarter financial planning, expense tracking, and personalized insights through an intuitive and user-friendly interface.​
 
 ## 🚀 Live Demo
 
@@ -10,42 +10,60 @@ Welcome to **FinBuddy**, a FinTech web application developed as part of the GDSC
 
 ## 🌟 Features
 
-- 🧾 **Expense Tracking** – Log your daily income and expenses in a clean dashboard.
-- 📊 **Visual Insights** – Interactive charts to help you understand your financial behavior.
-- 🎯 **Budget Planner** – Set goals and monitor progress with ease.
-- 💡 **Smart Tips** – Get personalized financial advice powered by simple logic (expandable to AI!).
-- 🔒 **Secure & Private** – All data is handled safely on your device or via secure APIs.
+- 🧾 **Expense Tracking** – Log daily income and expenses with a clean and interactive dashboard.
+- 📊 **Visual Insights** – Gain a better understanding of your financial behavior through interactive charts.
+- 🎯 **Budget Planner** – Set financial goals and monitor your progress effortlessly.
+- 💡 **Smart Tips** – Receive personalized financial advice powered by simple logic, with potential expansion to AI-driven insights.
+- 🔒 **Secure & Private** – Ensure your data is handled securely, either on your device or via secure APIs.
 
 ---
 
 ## 🛠️ Tech Stack
 
-| Frontend | Styling | Routing | Charts |
-|----------|---------|---------|--------|
-| React.js | Tailwind CSS / CSS Modules | React Router | Chart.js / Recharts |
+| Category     | Technology                     | Description                                      |
+|--------------|---------------------------------|--------------------------------------------------|
+| **Frontend** | React.js                        | Core library for building the user interface     |
+|              | Tailwind CSS / CSS Modules      | Styling and layout                               |
+|              | React Router                    | Navigation between app pages                     |
+|              | Chart.js / Recharts             | Data visualization and financial insights        |
+| **Backend**  | Node.js                         | JavaScript runtime for backend logic             |
+|              | Express.js                      | Web framework for building APIs                  |
+|              | MongoDB                         | NoSQL database for storing user financial data   |
+|              | JWT (JSON Web Tokens)           | User authentication and session management       |
+| **DevOps & Tools** | Git & GitHub              | Version control and project collaboration        |
+|              | GitHub Pages                    | Frontend deployment                              |
+|              | GitHub Actions                  | CI/CD automation                                 |
+
 
 ---
 
 ## 📁 Folder Structure
 
-bash
 FinTech-gdsc-Hackathon/
-├── public/
-├── src/
-│   ├── components/     # Reusable UI components
-│   ├── pages/          # Main pages (Dashboard, Login, etc.)
-│   ├── assets/         # Images and icons
-│   ├── App.js          # App setup and routing
-│   └── index.js        # Entry point
+├── apex-demo/             # Demo assets and mockups
+├── chatbot_backend/       # Backend logic for chatbot and APIs
+├── public/                # Static assets (images, icons, etc.)
+├── src/                   # React application source code
+│   ├── components/        # Reusable React components
+│   ├── pages/             # Application pages (Home, Dashboard, etc.)
+│   ├── styles/            # CSS and Tailwind configurations
+│   └── utils/             # Utility functions and helpers
+├── .gitignore             # Git ignore rules
+├── package.json           # Project metadata and dependencies
+├── package-lock.json      # Exact versions of installed dependencies
+└── README.md              # Project documentation
 
 
 
 🧠 What’s Unique?
-1. Built with a user-first design approach
-
-2. Integrates real-world financial principles in an interactive way
-
-3.Designed to be extensible with future APIs and machine learning
+- 🔍 **Intuitive Dashboard** – Clean, user-friendly interface for effortless financial tracking.
+- 📊 **Smart Visualizations** – Interactive graphs and charts make complex data easy to understand.
+- 💡 **Personalized Tips** – Get intelligent insights to help manage and improve your financial habits.
+- 🎯 **Goal-Oriented Planning** – Set financial goals and watch your progress with real-time updates.
+- 🔐 **Secure Authentication** – JWT-based login ensures your data stays private and safe.
+- ⚡ **Fast & Responsive** – Built with React and Tailwind CSS for a lightning-fast user experience.
+- 🌐 **Seamless Deployment** – Deployed via GitHub Pages with continuous integration using GitHub Actions.
+- 🧠 **Scalable Structure** – Modular design allows easy integration of future features like AI chatbots.
 
 💡 Future Enhancements
 🔗 Bank API Integration
@@ -57,5 +75,5 @@ FinTech-gdsc-Hackathon/
 📤 Cloud database for user data
 
 🤝 Team
-Made with 💙 by Anamika garg,Hansuja,Neelima Singh ,Harleen kaur 
+Made with 💙 by Anamika garg, Hansuja, Neelima Singh ,Harleen kaur 
 
