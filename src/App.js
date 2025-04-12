@@ -48,7 +48,7 @@ function App() {
 
           <Route path="/transactions" element={
             <div className="Transactions">
-              <h2>Transaction History</h2>
+              <h2></h2>
               <TransactionTable />
             </div>
           } />
