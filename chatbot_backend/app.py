@@ -10,7 +10,7 @@ CORS(app)
 def home():
     return jsonify({"status": "API is running", "message": "Welcome to the FinTech API"})
 
-@app.route("api/chat", methods=["POST"])
+@app.route("/api/chat", methods=["POST"])
 def chat():
     data = request.json
     user_query = data.get("message", "")
