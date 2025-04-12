@@ -1,70 +1,61 @@
-# Getting Started with Create React App
+# 💰 FinBuddy – Your Friendly FinTech Companion
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to **FinBuddy**, a FinTech web application developed as part of the GDSC Hackathon. FinBuddy is designed to empower users with smarter financial planning, investment tracking, and personalized insights – all through a modern, user-friendly interface.
 
-## Available Scripts
+## 🚀 Live Demo
 
-In the project directory, you can run:
+👉 [Visit FinBuddy](https://neelima-singh07.github.io/FinTech-gdsc-Hackathon) 
 
-### `npm start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## 🌟 Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 🧾 **Expense Tracking** – Log your daily income and expenses in a clean dashboard.
+- 📊 **Visual Insights** – Interactive charts to help you understand your financial behavior.
+- 🎯 **Budget Planner** – Set goals and monitor progress with ease.
+- 💡 **Smart Tips** – Get personalized financial advice powered by simple logic (expandable to AI!).
+- 🔒 **Secure & Private** – All data is handled safely on your device or via secure APIs.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## 🛠️ Tech Stack
 
-### `npm run build`
+| Frontend | Styling | Routing | Charts |
+|----------|---------|---------|--------|
+| React.js | Tailwind CSS / CSS Modules | React Router | Chart.js / Recharts |
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+---
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## 📁 Folder Structure
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+bash
+FinTech-gdsc-Hackathon/
+├── public/
+├── src/
+│   ├── components/     # Reusable UI components
+│   ├── pages/          # Main pages (Dashboard, Login, etc.)
+│   ├── assets/         # Images and icons
+│   ├── App.js          # App setup and routing
+│   └── index.js        # Entry point
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+🧠 What’s Unique?
+1. Built with a user-first design approach
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. Integrates real-world financial principles in an interactive way
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3.Designed to be extensible with future APIs and machine learning
 
-## Learn More
+💡 Future Enhancements
+🔗 Bank API Integration
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+📱 Mobile-responsive views
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+🤖 AI chatbot for financial tips
 
-### Code Splitting
+📤 Cloud database for user data
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+🤝 Team
+Made with 💙 by Anamika garg,Hansuja,Neelima Singh ,Harleen kaur 
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
