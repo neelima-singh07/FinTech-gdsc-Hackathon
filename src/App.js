@@ -7,6 +7,7 @@ import WeeklySummary from './components/WeeklySummary';
 import ApexChart from './expanse_tracker';
 import DashboardPage from './DashboardPage';
 import AITips from './components/AITips';
+import Chatbot from './components/Chatbot';
 import './index.css';
 
 import HeroSection from './hero_section';
@@ -80,6 +81,11 @@ function App() {
               <Route path="/expenses" element={<Expenses />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/budget" element={<BudgetPage />} />
+              <Route path="/chatbot" element={
+                <div className="chatbot-page">
+                  <Chatbot />
+                </div>
+              } />
             </Route>
             
             {/* Redirect to dashboard */}

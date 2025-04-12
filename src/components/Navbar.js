@@ -28,13 +28,15 @@ const Navbar = () => {
             {/* <li className="nav-item">
               <Link className="nav-link" to="/transactions">Recent Transactions</Link>
             </li> */}
-            <li className="nav-item">
-              <Link className="nav-link" to="/ai-tips">AI-Chatbot</Link>
-            </li>
            
             <li className="nav-item">
               <Link to="/expenses" className={`nav-link ${isActive('/expenses')}`}>
                 <FaMoneyBillWave /> Add Expenses
+              </Link>
+            </li>
+            <li className="nav-item">
+              <Link to="/chatbot" className={`nav-link ${isActive('/expenses')}`}>
+                <FaMoneyBillWave /> Chatbot
               </Link>
             </li>
             <li className="nav-item">

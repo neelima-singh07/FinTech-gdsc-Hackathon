@@ -73,7 +73,8 @@ h2 {
 .Weekly_summary,
 .Transactions,
 .Dashboard_page,
-.AI {
+.AI,
+.chatbot-page {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
