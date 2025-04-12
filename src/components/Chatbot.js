@@ -6,7 +6,7 @@ const Chatbot = () => {
   const [messages, setMessages] = useState([
     {
       type: 'bot',
-      content: 'Hello! I\'m your financial assistant. How can I help you today?'
+      content: "Hello! I'm your financial assistant. How can I help you today?"
     }
   ]);
   const [inputMessage, setInputMessage] = useState('');
@@ -35,13 +35,13 @@ const Chatbot = () => {
     setIsLoading(true);
     
     try {
-      // Call the Flask backend API
+      // Call the Flask backend API (UPDATED 'query' key)
       const response = await fetch('https://fintech-gdsc-hackathon.onrender.com/api/chat', {
-  method: 'POST',
+        method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ message: userMessage.content }),
+        body: JSON.stringify({ query: userMessage.content }), // <-- updated key here
       });
       
       if (!response.ok) {
