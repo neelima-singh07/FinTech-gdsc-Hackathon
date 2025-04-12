@@ -195,6 +195,70 @@
   font-weight: 500;
 }
 
+.budget-info {
+  margin-top: 8px;
+  padding: 12px;
+  background-color: #f8f9fa;
+  border-radius: 8px;
+  border-left: 4px solid #4f46e5;
+}
+
+.budget-info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #495057;
+}
+
+.budget-progress {
+  margin-top: 8px;
+  height: 8px;
+  background-color: #e9ecef;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.budget-progress .progress-bar {
+  height: 100%;
+  transition: width 0.3s ease, background-color 0.3s ease;
+}
+
+.budget-update-notification {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 1rem;
+  margin: 1rem 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.budget-update-notification h4 {
+  margin: 0 0 0.5rem 0;
+  color: #212529;
+}
+
+.budget-update-notification p {
+  margin: 0.5rem 0;
+  color: #6c757d;
+}
+
+.budget-update-notification .budget-progress {
+  background-color: #e9ecef;
+  border-radius: 4px;
+  height: 8px;
+  margin: 0.5rem 0;
+  overflow: hidden;
+}
+
+.budget-update-notification .progress-bar {
+  height: 100%;
+  transition: width 0.3s ease-in-out;
+}
+
+.budget-update-notification .budget-amounts {
+  font-size: 0.9rem;
+  color: #495057;
+}
+
 @media (max-width: 768px) {
   .expenses-content {
     grid-template-columns: 1fr;

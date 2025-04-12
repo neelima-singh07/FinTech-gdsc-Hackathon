@@ -1,17 +1,34 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import '../styles/Profile.css';
+import { useAuth } from '../contexts/AuthContext';
 
 const Profile = () => {
+  const { user } = useAuth();
   const [profile, setProfile] = useState({
-    name: 'John Doe',
-    email: 'john.doe@example.com',
-    phone: '+1 234 567 8900',
+    username: user?.username || '',
+    email: user?.email || '',
+    phone: '',
     monthlyBudget: '2000',
     currency: 'USD',
   });
 
   const [isEditing, setIsEditing] = useState(false);
   const [editedProfile, setEditedProfile] = useState(profile);
+
+  useEffect(() => {
+    // Update profile when user data changes
+    setProfile(prevProfile => ({
+      ...prevProfile,
+      username: user?.username || prevProfile.username,
+      email: user?.email || prevProfile.email,
+    }));
+    
+    setEditedProfile(prevProfile => ({
+      ...prevProfile,
+      username: user?.username || prevProfile.username,
+      email: user?.email || prevProfile.email,
+    }));
+  }, [user]);
 
   const handleChange = (e) => {
     setEditedProfile({
@@ -24,6 +41,7 @@ const Profile = () => {
     e.preventDefault();
     setProfile(editedProfile);
     setIsEditing(false);
+    // In a real app, you would update the profile in the backend here
   };
 
   return (
@@ -47,12 +65,12 @@ const Profile = () => {
           {isEditing ? (
             <form onSubmit={handleSubmit} className="profile-form">
               <div className="form-group">
-                <label htmlFor="name">Full Name</label>
+                <label htmlFor="username">Username</label>
                 <input
                   type="text"
-                  id="name"
-                  name="name"
-                  value={editedProfile.name}
+                  id="username"
+                  name="username"
+                  value={editedProfile.username}
                   onChange={handleChange}
                   required
                 />
@@ -71,7 +89,7 @@ const Profile = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="phone">Phone Number</label>
+                <label htmlFor="phone">Phone</label>
                 <input
                   type="tel"
                   id="phone"
@@ -93,17 +111,17 @@ const Profile = () => {
               </div>
 
               <div className="form-group">
-                <label htmlFor="currency">Preferred Currency</label>
+                <label htmlFor="currency">Currency</label>
                 <select
                   id="currency"
                   name="currency"
                   value={editedProfile.currency}
                   onChange={handleChange}
                 >
-                  <option value="USD">USD ($)</option>
-                  <option value="EUR">EUR (€)</option>
-                  <option value="GBP">GBP (£)</option>
-                  <option value="INR">INR (₹)</option>
+                  <option value="USD">USD</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="INR">INR</option>
                 </select>
               </div>
 
@@ -123,8 +141,8 @@ const Profile = () => {
           ) : (
             <div className="profile-info">
               <div className="info-group">
-                <label>Full Name</label>
-                <p>{profile.name}</p>
+                <label>Username</label>
+                <p>{profile.username}</p>
               </div>
 
               <div className="info-group">
@@ -133,8 +151,8 @@ const Profile = () => {
               </div>
 
               <div className="info-group">
-                <label>Phone Number</label>
-                <p>{profile.phone}</p>
+                <label>Phone</label>
+                <p>{profile.phone || 'Not set'}</p>
               </div>
 
               <div className="info-group">
@@ -143,7 +161,7 @@ const Profile = () => {
               </div>
 
               <div className="info-group">
-                <label>Preferred Currency</label>
+                <label>Currency</label>
                 <p>{profile.currency}</p>
               </div>
 

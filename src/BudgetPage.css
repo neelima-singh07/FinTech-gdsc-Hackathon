@@ -190,6 +190,51 @@
   background-color: #c82333;
 }
 
+.refresh-button {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  color: #495057;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 16px;
+}
+
+.refresh-button:hover {
+  background-color: #e9ecef;
+  border-color: #ced4da;
+}
+
+.refresh-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.refresh-button svg {
+  font-size: 16px;
+}
+
+.spinning {
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.budget-card-header h3 {
+  font-size: 18px;
+  margin: 0;
+  color: #212529;
+  text-transform: capitalize;
+}
+
 @media (max-width: 768px) {
   .budget-container {
     padding: 1rem;
