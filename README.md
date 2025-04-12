@@ -76,6 +76,7 @@ FinTech-gdsc-Hackathon/
 
 📤 Cloud database for user data
 
+---
 🤝 **Team**
 Made with 💙 by Anamika garg, Hansuja, Neelima Singh ,Harleen kaur 
 
