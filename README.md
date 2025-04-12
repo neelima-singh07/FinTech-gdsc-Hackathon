@@ -55,7 +55,7 @@ FinTech-gdsc-Hackathon/
 
 
 
-🧠 What’s Unique?
+🧠 **What's Unique?**
 - 🔍 **Intuitive Dashboard** – Clean, user-friendly interface for effortless financial tracking.
 - 📊 **Smart Visualizations** – Interactive graphs and charts make complex data easy to understand.
 - 💡 **Personalized Tips** – Get intelligent insights to help manage and improve your financial habits.
@@ -65,7 +65,7 @@ FinTech-gdsc-Hackathon/
 - 🌐 **Seamless Deployment** – Deployed via GitHub Pages with continuous integration using GitHub Actions.
 - 🧠 **Scalable Structure** – Modular design allows easy integration of future features like AI chatbots.
 
-💡 Future Enhancements
+💡 **Future Enhancements:**
 
 🔗 Bank API Integration
 
@@ -75,6 +75,6 @@ FinTech-gdsc-Hackathon/
 
 📤 Cloud database for user data
 
-🤝 Team
+🤝 **Team**
 Made with 💙 by Anamika garg, Hansuja, Neelima Singh ,Harleen kaur 
 
