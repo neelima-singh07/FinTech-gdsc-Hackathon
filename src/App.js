@@ -8,6 +8,7 @@ import ApexChart from './expanse_tracker';
 import DashboardPage from './DashboardPage';
 import AITips from './components/AITips';
 import Chatbot from './components/Chatbot';
+import LandingPage from './components/LandingPage';
 import './index.css';
 
 import HeroSection from './hero_section';
@@ -26,22 +27,26 @@ function App() {
     <AuthProvider>
       <Router>
         <div className="App">
-
           {/* Navbar */}
           <Navbar/>
-          {/* { <div className="hero">
-                <h2></h2>
-                <HeroSection />
-              </div> } */}
+          
           {/* ROUTED PAGES */}
           <Routes>
             {/* Public routes */}
+            <Route path="/" element={<LandingPage />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             
             {/* Protected routes */}
             <Route element={<ProtectedRoute />}>
-              <Route path="/" element={
+              <Route path="/dashboard" element={
+                <div className="Dashboard_page">
+                  <h2>Dashboard Page</h2>
+                  <DashboardPage />
+                </div>
+              } />
+              
+              <Route path="/expense-tracker" element={
                 <div className="Tracker_parent">
                   <h2>Your Expense Tracker</h2>
                   <div className="chart-container">
@@ -52,7 +57,6 @@ function App() {
               
               <Route path="/weekly-summary" element={
                 <div className="Weekly_summary">
-                  {/* <h2>Week2345678-879+ly Summary</h2> */}
                   <WeeklySummary />
                 </div>
               } />
@@ -64,16 +68,8 @@ function App() {
                 </div>
               } />
               
-              <Route path="/dashboard" element={
-                <div className="Dashboard_page">
-                  <h2>Dashboard Page</h2>
-                  <DashboardPage />
-                </div>
-              } />
-              
               <Route path="/ai-tips" element={
                 <div className="AI">
-                  {/* <h2>AI Tips</h2> */}
                   <AITips />
                 </div>
               } />
@@ -86,13 +82,13 @@ function App() {
                   <Chatbot />
                 </div>
               } />
+              
             </Route>
             
-            {/* Redirect to dashboard */}
-            <Route path="*" element={<Navigate to="/dashboard" replace />} />
+            {/* Redirect to landing page */}
+            <Route path="*" element={<Navigate to="/" replace />} />
           </Routes>
           
-              
         </div>
         <footer className="footer text-center p-3 mt-5 bg-dark text-light">
           &copy; {new Date().getFullYear()} FinBuddy. All rights reserved.
