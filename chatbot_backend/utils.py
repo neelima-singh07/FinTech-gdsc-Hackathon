@@ -78,7 +78,7 @@ def handle_chat(user_query):
 
         # 📰 Route news/current/recent type queries to Gemini directly
         if any(x in user_query for x in ["news", "recent", "current", "updates", "latest"]):
-            gemini_response = query_gemini_model(user_query)
+            gemini_response = query_gemini_model(user_query+" In 150 words")
             return gemini_response or "❗ Gemini couldn't fetch the latest update."
 
         # 🤖 Try Hugging Face LLM first
@@ -88,6 +88,6 @@ def handle_chat(user_query):
         return model_response
 
     except Exception as e:
-        print(f"[Fallback triggered] {e}")
-        gemini_response = query_gemini_model(user_query)
-        return gemini_response or "❗ Sorry, I couldn't get a valid answer at the moment."
+            print(f"[Fallback triggered] {e}")
+            gemini_response = query_gemini_model(user_query+" In 150 words")
+            return gemini_response or "❗ Sorry, I couldn't get a valid answer at the moment."
