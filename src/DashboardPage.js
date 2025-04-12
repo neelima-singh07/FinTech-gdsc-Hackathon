@@ -220,12 +220,6 @@ const DashboardPage = () => {
               <span>Budget</span>
             </button>
           </Link>
-          <Link to="/weekly-summary"> 
-            <button className="nav-button">
-              <FaCalendarAlt className="nav-icon" />
-              <span>Weekly Summary</span>
-            </button>
-          </Link>
           <Link to="/transactions"> 
             <button className="nav-button">
               <FaTable className="nav-icon" />
