@@ -66,6 +66,7 @@ FinTech-gdsc-Hackathon/
 - 🧠 **Scalable Structure** – Modular design allows easy integration of future features like AI chatbots.
 
 💡 Future Enhancements
+
 🔗 Bank API Integration
 
 📱 Mobile-responsive views
