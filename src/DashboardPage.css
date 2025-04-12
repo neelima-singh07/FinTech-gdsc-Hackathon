@@ -459,10 +459,10 @@
   color: #007bff;
 }
 
-.nav-link.active {
+/* .nav-link.active {
   background-color: #007bff;
   color: white;
-}
+} */
 
 .nav-link svg {
   font-size: 1.1rem;
