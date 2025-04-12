@@ -4,7 +4,7 @@ FinBuddy is a modern FinTech web application developed during a Google Developer
 
 ## 🚀 Live Demo
 
-👉 [Visit FinBuddy](https://neelima-singh07.github.io/FinTech-gdsc-Hackathon) 
+👉 [Visit FinBuddy](https://gdschack.vercel.app/) 
 
 ---
 
