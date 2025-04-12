@@ -22,7 +22,5 @@ def test():
     return jsonify({"status": "working"})
 
 if __name__ == "__main__":
-    port = int(os.environ.get("PORT", 5001))
-    # For production deployment use 0.0.0.0 instead of localhost
-    # This allows the app to be accessible from outside the container
+    port = int(os.environ.get("PORT", 10000))
     app.run(host="0.0.0.0", port=port, debug=False)
