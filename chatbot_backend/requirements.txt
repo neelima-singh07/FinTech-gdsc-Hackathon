@@ -4,3 +4,4 @@ python-dotenv
 langchain-google-genai
 google-generativeai
 flask_cors
+gunicorn
