@@ -36,7 +36,7 @@ const Chatbot = () => {
     
     try {
       // Call the Flask backend API
-      const response = await fetch('https://fintech-gdsc-hackathon.onrender.com/chat', {
+      const response = await fetch('https://fintech-gdsc-hackathon.onrender.com/api/chat', {
   method: 'POST',
         headers: {
           'Content-Type': 'application/json',
