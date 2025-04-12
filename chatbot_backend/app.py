@@ -6,6 +6,10 @@ import os
 app = Flask(__name__)
 CORS(app)
 
+@app.route("/", methods=["GET"])
+def home():
+    return jsonify({"status": "API is running", "message": "Welcome to the FinTech API"})
+
 @app.route("/chat", methods=["POST"])
 def chat():
     data = request.json
